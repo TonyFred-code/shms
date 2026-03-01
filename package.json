@@ -1,0 +1,71 @@
+{
+  "name": "shms",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Smart Hostel Management System — a full-featured hostel management platform for tertiary institutions covering room allocations, accommodation applications, fee payments, complaints, and announcements.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TonyFred-code/shms"
+  },
+  "bugs": {
+    "url": "https://github.com/TonyFred-code/shms/issues"
+  },
+  "homepage": "https://github.com/TonyFred-code/shms#readme",
+  "author": "Alfred O. Faith (Tony Fred)",
+  "contributors": [
+    {
+      "name": "Claude (Anthropic)",
+      "url": "https://claude.ai",
+      "role": "AI pair programmer"
+    }
+  ],
+  "keywords": [
+    "hostel-management",
+    "student-portal",
+    "accommodation",
+    "university",
+    "react",
+    "vite",
+    "tailwindcss",
+    "supabase",
+    "vibe-coded",
+    "ai-assisted",
+    "claude"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier . --write",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "framer-motion": "^12.34.3",
+    "lucide-react": "^0.575.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.3",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "eslint": "^9.39.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.2.4"
+  }
+}
