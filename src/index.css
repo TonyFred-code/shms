@@ -1,1 +1,90 @@
 @import "tailwindcss";
+
+@theme {
+  --color-navy-950: #1c1d4f;
+  --color-navy-900: #2e3183;
+  --color-navy-700: #3f3fcc;
+  --color-accent: #6470f3;
+  --color-accent-light: #a5b8fc;
+}
+
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f7f8fc;
+    color: #1a1d2e;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-navy-700 text-white font-medium rounded-lg 
+           hover:bg-navy-800 active:bg-navy-900 transition-all duration-150 text-sm
+           focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-white text-navy-700 font-medium rounded-lg border border-navy-200
+           hover:bg-navy-50 active:bg-navy-100 transition-all duration-150 text-sm
+           focus:outline-none focus:ring-2 focus:ring-navy-300 focus:ring-offset-2;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 text-white font-medium rounded-lg 
+           hover:bg-red-700 active:bg-red-800 transition-all duration-150 text-sm;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100 p-6;
+  }
+
+  .input {
+    @apply w-full px-4 py-2.5 rounded-lg border border-gray-200 bg-white text-sm
+           focus:outline-none focus:ring-2 focus:ring-navy-400 focus:border-transparent
+           placeholder:text-gray-400 transition-all duration-150;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100 p-5 flex flex-col gap-1;
+  }
+
+  .table-row {
+    @apply border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-150
+           text-navy-200 hover:bg-white/10 hover:text-white;
+  }
+
+  .sidebar-link.active {
+    @apply bg-white/15 text-white;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
