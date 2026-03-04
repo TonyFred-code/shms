@@ -1,11 +1,71 @@
 @import "tailwindcss";
 
 @theme {
+  /* COLORS */
   --color-navy-950: #1c1d4f;
   --color-navy-900: #2e3183;
   --color-navy-700: #3f3fcc;
+  --color-navy-50: #f0f4ff;
+  --color-navy-100: #e0e9ff;
+  --color-navy-200: #c7d7fe;
+  --color-navy-300: #a5b8fc;
+  --color-navy-400: #8193f8;
+  --color-navy-500: #6470f3;
+  --color-navy-600: #4f52e7;
+  --color-navy-700: #3f3fcc;
+  --color-navy-800: #3535a5;
+  --color-navy-900: #2e3183;
+  --color-navy-950: #1c1d4f;
+  --color-slate-850: #172033;
+
   --color-accent: #6470f3;
   --color-accent-light: #a5b8fc;
+
+  /* FONT FAMILY */
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* ANIMATIONS */
+  --animate-fade-in: fadeIn 0.5s ease forwards;
+  --animate-slide-up: slideUp 0.4s ease forwards;
+  --animate-slide-in-right: slideInRight 0.3s ease forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* BOX SHADOW */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover:
+    0 4px 12px rgba(0, 0, 0, 0.12), 0 16px 40px rgba(0, 0, 0, 0.08);
+  --shadow-nav: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 @layer base {
